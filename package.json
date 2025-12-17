@@ -1,0 +1,36 @@
+{
+  "name": "sub-issue-closer",
+  "version": "1.0.0",
+  "description": "Interactive CLI tool to recursively close GitHub sub-issues when 100% complete",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "sub-issue-closer": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "github",
+    "issues",
+    "sub-issues",
+    "cli",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.0",
+    "@octokit/rest": "^21.0.2"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
