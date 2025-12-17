@@ -32,5 +32,16 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next",
+      "beta",
+      {
+        "name": "*.x",
+        "prerelease": false
+      }
+    ]
   }
 }
